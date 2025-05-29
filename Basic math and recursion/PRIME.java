@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class PRIME {
     public static void main(String[] args) {
-        int n=4;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter number=");
+        int n=sc.nextInt();
         int cnt=0;
         for(int i=1;i*i<=n;i++)
         {
