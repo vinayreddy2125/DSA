@@ -13,6 +13,6 @@ public class Pattern2 {
                 cnt++;
             }
             System.out.println();
-        }
+        }sc.close();
     }
 }

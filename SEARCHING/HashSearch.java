@@ -44,6 +44,6 @@ public class HashSearch {
         if (ht.search(key))
             System.out.println("Key found.");
         else
-            System.out.println("Key not found.");
+            System.out.println("Key not found.");sc.close();
     }
 }

@@ -12,7 +12,7 @@ public class JumpingNumber {
         else{
             System.out.println(n +" Not Jumping Number");
             int nextnumber=nextJumping(n);
-            System.out.println( "Next Jumping Number="+nextnumber);
+            System.out.println( "Next Jumping Number="+nextnumber);sc.close();
         }
     }
     public static boolean isJumpingNumber(int n)

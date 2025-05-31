@@ -28,7 +28,7 @@ public class ReverseStringExceptRange {
             reverse(c, end+1,s.length()-1);
             System.out.println("Reverse String="+new String(c));
         }
-        
+        sc.close();
     }
 }
 

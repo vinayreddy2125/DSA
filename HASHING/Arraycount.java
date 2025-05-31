@@ -32,6 +32,6 @@ public class Arraycount {
         {
             int number=sc.nextInt();
             System.out.println("no of times "+ number+ "occured=" +hash[number]);
-        }
+        }sc.close();
     }
 }

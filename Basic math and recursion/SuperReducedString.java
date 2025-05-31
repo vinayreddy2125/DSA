@@ -24,6 +24,6 @@ public class SuperReducedString {
             System.out.println("Empty String");
         } else {
             System.out.println("Super Reduced String: " + result.toString());
-        }
+        }sc.close();
     }
 }

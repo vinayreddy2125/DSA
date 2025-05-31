@@ -29,6 +29,6 @@ public class LinearSearch {
         if(result==-1)
         System.out.println("Target not found");
         else
-        System.out.println("Target found at "+result);
+        System.out.println("Target found at "+result);sc.close();
     }
 }

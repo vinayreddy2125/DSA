@@ -18,7 +18,7 @@ public class EvenCharacters {
             if(iseven(a))
                 res+=s.charAt(i);
         }
-        System.out.println(res);
+        System.out.println(res);sc.close();
     }
     
 }

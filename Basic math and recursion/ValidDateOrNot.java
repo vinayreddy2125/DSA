@@ -36,6 +36,7 @@ public class ValidDateOrNot {
         }
         else
                     System.out.println("Invalid");
+                    sc.close();
     }
     
 }

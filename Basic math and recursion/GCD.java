@@ -15,6 +15,6 @@ public class GCD {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int res=gcd(a,b);
-        System.out.print(res);
+        System.out.print(res);sc.close();
     }
 }

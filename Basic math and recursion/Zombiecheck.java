@@ -25,7 +25,7 @@ public class Zombiecheck {
         System.out.print("Enter String=");
         String input=sc.nextLine();
         Zombie h=new Zombie();
-        System.out.println(h.checkzombie(input));
+        System.out.println(h.checkzombie(input));sc.close();
     }
     
 }

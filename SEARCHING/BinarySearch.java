@@ -34,6 +34,6 @@ public class BinarySearch {
         if (result == -1)
             System.out.println("Target not found");
         else
-            System.out.println("Target found at index " + result);
+            System.out.println("Target found at index " + result);sc.close();
     }
 }

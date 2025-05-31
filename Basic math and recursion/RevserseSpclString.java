@@ -28,6 +28,6 @@ public class RevserseSpclString
             }
         }
         for(char c1:c)
-            System.out.print(c1);
+            System.out.print(c1);sc.close();
     }
 }

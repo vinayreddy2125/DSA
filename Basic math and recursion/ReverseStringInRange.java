@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class ReverseStringInRange {
     public static void reverse(char c[],int start,int end)
     {
@@ -27,7 +26,7 @@ public class ReverseStringInRange {
         else{
             reverse(c,start,end);
         }
-        
+        sc.close();
     }
 }
 

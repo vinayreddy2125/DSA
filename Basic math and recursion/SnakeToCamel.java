@@ -16,5 +16,6 @@ public class SnakeToCamel {
         }
 
         System.out.println("camelCase: " + str.toString());
+        sc.close();
     }
 }

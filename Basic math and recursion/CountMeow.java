@@ -22,6 +22,6 @@ public class CountMeow {
             }
         }
 
-        System.out.println("Count = " + count);
+        System.out.println("Count = " + count);sc.close();
     }
 }

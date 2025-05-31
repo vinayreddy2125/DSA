@@ -27,7 +27,7 @@ public class Selectionsort {
         System.out.print(" sorted array elements:");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i]+" ");
-        }
+        }sc.close();
     }
 }
         

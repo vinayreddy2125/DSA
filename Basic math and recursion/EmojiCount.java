@@ -18,7 +18,7 @@ public class EmojiCount {
                 i=i+emoji.length()-1;
             }
         }
-        System.out.println(cnt);
+        System.out.println(cnt);sc.close();
     }
     
 }

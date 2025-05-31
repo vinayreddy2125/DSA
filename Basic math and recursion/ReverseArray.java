@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class ReverseArray {
     public static void reverse(int arr[],int start,int end)
     {
@@ -26,6 +25,7 @@ public class ReverseArray {
             System.out.print(" Reversed Array:");
             for (int i = 0; i < n; i++) 
                 System.out.print(arr[i]+" ");
+                sc.close();
     }
     
 }

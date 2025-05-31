@@ -23,6 +23,6 @@ public class CompressString {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string: ");
         String input = sc.nextLine();
-        compress(input);
+        compress(input);sc.close();
     }
 }

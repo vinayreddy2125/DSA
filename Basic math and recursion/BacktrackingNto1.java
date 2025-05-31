@@ -15,6 +15,6 @@ public class BacktrackingNto1 {
         int n = sc.nextInt();
 
         int res = h.print(0, n);
-        System.out.println("Sum of numbers from 0 to " + n + " = " + res);
+        System.out.println("Sum of numbers from 0 to " + n + " = " + res);sc.close();
     }
 }

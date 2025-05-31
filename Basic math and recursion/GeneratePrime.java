@@ -38,7 +38,7 @@ public class GeneratePrime {
         for (int num:arr) 
         {
             System.out.print(num+" ");
-        }
+        }sc.close();
     }
 }
         

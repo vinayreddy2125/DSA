@@ -13,6 +13,6 @@ public class PerfectNumber {
                         if((n/i!=i) && (n!=n/i))sum+=n/i;
                 }
             }
-            System.out.println(n==sum?"PerfectNumber":"NotPerfectNumber");
+            System.out.println(n==sum?"PerfectNumber":"NotPerfectNumber");sc.close();
         }
     }

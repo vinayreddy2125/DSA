@@ -14,6 +14,6 @@ public class FACTORIAL {
         int n = sc.nextInt();
 
         int res = h.print(1, n);
-        System.out.println("Factorial of  " + n + " = " + res);
+        System.out.println("Factorial of  " + n + " = " + res);sc.close();
     }
 }

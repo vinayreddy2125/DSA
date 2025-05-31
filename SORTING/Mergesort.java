@@ -56,6 +56,6 @@ public class Mergesort {
         System.out.print("Sorted array elements: ");
         for (int num : arr) {
             System.out.print(num + " ");
-        }
+        }sc.close();
     }
 }

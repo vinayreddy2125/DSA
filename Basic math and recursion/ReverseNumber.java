@@ -16,6 +16,6 @@ public class ReverseNumber {
         int n = sc.nextInt();
 
         int res = h.reverseNumber(n, 0);
-        System.out.println("Reverse of " + n + " = " + res);
+        System.out.println("Reverse of " + n + " = " + res);sc.close();
     }
 }
