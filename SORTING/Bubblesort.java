@@ -25,10 +25,11 @@ public class Bubblesort {
                 }
             }
         }
-        System.out.print(" sorted array elements:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i]+" ");
-        }sc.close();
+        System.out.println(arr);sc.close();
+        // System.out.print(" sorted array elements:");
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(arr[i]+" ");
+        // }sc.close();
     }
 }
         

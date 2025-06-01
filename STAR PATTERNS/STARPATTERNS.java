@@ -342,6 +342,25 @@ A B C D E
         }
         System.out.println();
     }
+/*
+     
+    20  15 10 5
+    19  14 9 4
+    18  13 8 3
+    17  12 7 2
+    16  11 6 1
+ */
+    int col=4;
+    for(int i=0;i<n;i++)
+    {
+        int val=n*col-i;
+        for(int j=0;j<col;j++)
+        {
+            System.out.print(val+" ");
+            val=val-n;
+        }
+        System.out.println();
+    }
 }
 }
 
