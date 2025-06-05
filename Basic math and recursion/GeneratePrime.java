@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class GeneratePrime {
     public static boolean isprime(int n)
     {
