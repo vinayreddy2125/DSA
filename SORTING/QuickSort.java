@@ -8,7 +8,6 @@ public class QuickSort {
             quickSort(arr, pivotIndex + 1, high);
         }
     }
-
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = low - 1;
