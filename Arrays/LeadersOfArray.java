@@ -1,7 +1,6 @@
 package Arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -27,6 +26,6 @@ public class LeadersOfArray {
             
         }Collections.reverse(res);
         for(int num:res)
-        System.out.print(num);
+        System.out.print(num); sc.close();
     }
 }
