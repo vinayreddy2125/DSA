@@ -13,7 +13,6 @@ public class BacktrackingNto1 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n = ");
         int n = sc.nextInt();
-
         int res = h.print(0, n);
         System.out.println("Sum of numbers from 0 to " + n + " = " + res);sc.close();
     }
