@@ -50,7 +50,7 @@ class List {
         while (currNode != null) {
             System.out.print(currNode.data + "->");
             currNode = currNode.next;
-        }GI
+        }
         System.out.println("null");
     }
     public void deleteFirst()
