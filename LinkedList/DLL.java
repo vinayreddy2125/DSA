@@ -90,6 +90,25 @@ class DoubleLinkedList{
         }
         curNode.next=null;
     }
+    public void ReverseDLL()
+    {
+        if(head==null || head.next==null)
+        {
+            System.out.println(head.data);
+            return;
+        }
+        Node currNode=head;
+        Node prev=null;
+        while(currNode!=null)
+        {
+            Node front=currNode.next;
+            currNode.next=prev;
+            currNode.prev=front;
+            prev=currNode;
+            currNode=front;
+        }
+        head=prev;
+    }
 }
 public class DLL {
     public static void main(String[] args) {
@@ -97,7 +116,7 @@ public class DLL {
         Scanner sc=new Scanner(System.in);
         int op;
         do{
-            System.out.println("1.AddFirst\n2.AddLast\n3.Display\n4.DeleteFirst\n5.DeleteLast\n0.Exit\nEnter your option=");
+            System.out.println("1.AddFirst\n2.AddLast\n3.Display\n4.DeleteFirst\n5.DeleteLast\n6.ReverseDLL\n0.Exit\nEnter your option=");
             op=sc.nextInt();
             switch (op) {
                 case 1:
@@ -119,6 +138,9 @@ public class DLL {
                 case 5:
                     ll.DeleteLast();
                     break;
+                case 6:
+                    ll.ReverseDLL();
+                    break;
                 case 0:
                     System.out.print("EXITING");
                     break;
@@ -127,7 +149,7 @@ public class DLL {
                     break;
             }
 
-        }while(op!=0);
+        }while(op!=0);sc.close();
     }
     
 }
