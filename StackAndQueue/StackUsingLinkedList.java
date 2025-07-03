@@ -1,75 +1,74 @@
-package LinkedList;
+package StackAndQueue;
 
 import java.util.Scanner;
 
-class StackUsingArray {
-    int n;
-    int[] arr;
-    int top;
+class ListNode {
+    int data;
+    ListNode next;
 
-    StackUsingArray(Scanner sc) {
-        System.out.print("Enter size of the Stack: ");
-        n = sc.nextInt();
-        arr = new int[n];
-        top = -1;
+    ListNode(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class LinkedListStack {
+    ListNode head;
+
+    LinkedListStack() {
+        head = null;
     }
 
     public void push(int val) {
-        if (top == n - 1) {
-            System.out.println("Stack Overflow");
-            return;
-        }
-        arr[++top] = val;
+        ListNode newNode = new ListNode(val);
+        newNode.next = head;
+        head = newNode;
     }
 
     public void pop() {
-        if (top == -1) {
-            System.out.println("Stack Underflow");
+        if (head == null) {
+            System.out.println("Stack is Empty");
             return;
         }
-        System.out.println("Popped: " + arr[top--]);
+        System.out.println("Popped: " + head.data);
+        head = head.next;
     }
 
     public void display() {
-        if (top == -1) {
-            System.out.println("Stack is empty");
+        if (head == null) {
+            System.out.println("Stack is Empty");
             return;
         }
         System.out.println("Stack Elements:");
-        for (int i = top; i >= 0; i--) {
-            System.out.println(arr[i]);
+        ListNode currNode = head;
+        while (currNode != null) {
+            System.out.println(currNode.data);
+            currNode = currNode.next;
         }
     }
 
     public void isEmpty() {
-        if (top == -1) {
+        if (head == null)
             System.out.println("Stack is Empty");
-        } else {
+        else
             System.out.println("Stack is Not Empty");
-        }
     }
 
     public void isFull() {
-        if (top == n - 1) {
-            System.out.println("Stack is Full");
-        } else {
-            System.out.println("Stack is Not Full");
-        }
+        System.out.println("Stack is Never Full (Linked List-based)");
     }
 
     public void stackTop() {
-        if (top == -1) {
+        if (head == null)
             System.out.println("Stack is Empty");
-        } else {
-            System.out.println("Top Element: " + arr[top]);
-        }
+        else
+            System.out.println("Top Element: " + head.data);
     }
 }
-
-public class ArrayStack {
+public class StackUsingLinkedList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StackUsingArray s = new StackUsingArray(sc);
+        LinkedListStack s = new LinkedListStack();
         int op;
 
         do {

@@ -1,4 +1,4 @@
-package LinkedList;
+package StackAndQueue;
 
 import java.util.Scanner;
 
