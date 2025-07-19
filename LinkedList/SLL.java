@@ -41,6 +41,23 @@ class List {
         currNode.next = newNode;
     }
 
+    public void insertany(int value,int bnodedata){
+        Node newnNode=new Node(value);
+        if(head.data==bnodedata){
+            head.next=newnNode;
+            return;
+        }
+        Node currNode=head;
+        while(currNode!=null && currNode.data!=bnodedata){
+            currNode=currNode.next;
+        }
+        if(currNode==null){
+            System.out.print("No such element found to insert");
+        }
+        
+        newnNode.next=currNode.next;
+        currNode.next=newnNode;
+    }
     public void display() {
         if (head == null) {
             System.out.println("LinkedList is Empty");
@@ -92,6 +109,26 @@ class List {
         }
         currNode.next=null;
     }
+    public void deleteany(int data){
+        if(head==null){
+            System.out.println("No such element found to delete");
+            return;
+        }
+        if(head.data==data){
+            head=head.next;
+            return;
+        }
+        Node currNode=head;
+        Node prev=null;
+        while(currNode!=null && currNode.data!=data){
+            prev=currNode;
+            currNode=currNode.next;
+        }
+        if(currNode==null){
+            System.out.println("No such element found to delete");
+        }else
+        prev.next=currNode.next;
+    }
 }
 
 public class SLL {
@@ -101,7 +138,7 @@ public class SLL {
         int op;
         do {
             System.out.print(
-                "1.InsertBeginning\n2.InsertEnd\n3.Display\n4.deleteFirst\n5.deleteLast\n6.searchnode\n0.Exit\nEnter Option="
+                "1.InsertBeginning\n2.InsertEnd\n3.Display\n4.deleteFirst\n5.deleteLast\n6.searchnode\n7.InsertAny\n8.DeleteAny\n0.Exit\nEnter Option="
             );
             op = sc.nextInt();
             switch (op) {
@@ -128,6 +165,18 @@ public class SLL {
                     System.out.print("Enter value to search=");
                     int valu = sc.nextInt();
                     System.out.println(ll.searchnode(valu));
+                    break;
+                case 7:
+                    System.out.print("enter value to insert=");
+                    int d=sc.nextInt();
+                    System.out.print("enter value to to insert before this data=");
+                    int b=sc.nextInt();
+                    ll.insertany(d,b);
+                    break;
+                 case 8:
+                    System.out.print("enter value to delete=");
+                    int de=sc.nextInt();
+                    ll.deleteany(de);
                     break;
                 case 0:
                     System.out.println("EXITING");
