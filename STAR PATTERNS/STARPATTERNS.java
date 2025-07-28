@@ -1,6 +1,6 @@
  
-public class STARPATTERNS {
-
+public class STARPATTERNS 
+{
   public static void main(String[] args) {
 /*
     * * * * *
@@ -345,10 +345,10 @@ A B C D E
 /*
      
     20  15 10 5
-    19  14 9 4
-    18  13 8 3
-    17  12 7 2
-    16  11 6 1
+    19  14 9  4
+    18  13 8  3
+    17  12 7  2
+    16  11 6  1
  */
     int col=4;
     for(int i=0;i<n;i++)

@@ -70,6 +70,18 @@ class List {
         }
         System.out.println("null");
     }
+    public void reverse(){
+        Node temp=head;
+        Node prev=null;
+        while(temp!=null)
+        {
+            Node front=temp.next;
+            temp.next=prev;
+            prev=temp;
+            temp=front;
+        }
+        head=prev;
+    }
     public void deleteFirst()
     {
         if (head == null) {
@@ -138,7 +150,7 @@ public class SLL {
         int op;
         do {
             System.out.print(
-                "1.InsertBeginning\n2.InsertEnd\n3.Display\n4.deleteFirst\n5.deleteLast\n6.searchnode\n7.InsertAny\n8.DeleteAny\n0.Exit\nEnter Option="
+                "1.InsertBeginning\n2.InsertEnd\n3.Display\n4.deleteFirst\n5.deleteLast\n6.searchnode\n7.InsertAny\n8.DeleteAny\n9.Reverse\n0.Exit\nEnter Option="
             );
             op = sc.nextInt();
             switch (op) {
@@ -178,6 +190,8 @@ public class SLL {
                     int de=sc.nextInt();
                     ll.deleteany(de);
                     break;
+                case 9:
+                    ll.reverse();
                 case 0:
                     System.out.println("EXITING");
                     break;

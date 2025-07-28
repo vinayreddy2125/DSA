@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class QuickSort {
     public static void quickSort(int[] arr, int low, int high) {
-        if (low < high) {
+            if (low>=high) 
+            return;
             int pivotIndex = partition(arr, low, high);
             quickSort(arr, low, pivotIndex - 1);
             quickSort(arr, pivotIndex + 1, high);
-        }
+        
     }
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
