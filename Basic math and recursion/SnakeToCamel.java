@@ -14,7 +14,6 @@ public class SnakeToCamel {
                 str.setCharAt(i, Character.toUpperCase(next)); // replace next char with uppercase
             }
         }
-
         System.out.println("camelCase: " + str.toString());
         sc.close();
     }

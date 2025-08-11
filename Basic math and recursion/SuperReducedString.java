@@ -20,7 +20,8 @@ public class SuperReducedString {
         }
 
         // Final output
-        if (result.length() == 0) {
+        if (result.length() == 0) 
+        {
             System.out.println("Empty String");
         } else {
             System.out.println("Super Reduced String: " + result.toString());
