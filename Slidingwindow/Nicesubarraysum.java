@@ -2,7 +2,7 @@ package Slidingwindow;
 
 import java.util.Scanner;
 
-public class Maxconsecutiveones {
+public class Nicesubarraysum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -18,30 +18,20 @@ public class Maxconsecutiveones {
             arr[i] = sc.nextInt();
         }
 
-        int maxlen = 0, zeros = 0;
-        int left = 0, right = 0;
+        int count = 0;
 
-        while (right < n) {
-            
-            if (arr[right] == 0) {
-                zeros++;
-            }
-
-            while (zeros > k) {
-                if (arr[left] == 0) {
-                    zeros--;
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = i; j < n; j++) { // ✅ fixed increment variable
+                sum += arr[j];
+                if (sum == k) {
+                    count++;
                 }
-                left++;
+                if(sum>k)break;
             }
-
-
-            if(zeros<=k)
-            maxlen = Math.max(maxlen, right - left + 1);
-
-
-            right++;
         }
 
-        System.out.println("maxcount = " + maxlen);sc.close();
+        System.out.println("No of subarrays = " + count);
+        sc.close();
     }
 }
