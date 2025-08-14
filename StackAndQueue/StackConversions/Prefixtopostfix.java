@@ -18,7 +18,7 @@ public class Prefixtopostfix {
                 s.push(subexp);
             }
         }
-        return (String )s.peek();
+        return (String)s.peek();
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
